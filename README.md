@@ -1,7 +1,4 @@
-# Getting Started With Google Chrome Extensions (Hello World)
 
-This example demonstrates how to create a simple "Hello World" Chrome Extension.
-For more details, visit the [official tutorial](https://developer.chrome.com/docs/extensions/get-started/tutorial/hello-world).
 
 ## Running This Extension
 
