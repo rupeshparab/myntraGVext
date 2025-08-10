@@ -1,0 +1,41 @@
+{
+  "name": "GoldDeals Myntra Gvs Extensions",
+  "description": "Extensions to extract and load myntra gvs",
+  "version": "1.0",
+  "manifest_version": 3,
+  "action": {
+    "default_popup": "hello.html",
+    "default_icon": "hello_extensions.png"
+  },
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "storage",
+    "tabs"
+  ],
+  "host_permissions": [
+    "https://mail.google.com/*",
+    "https://www.myntra.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://mail.google.com/*"
+      ],
+      "js": [
+        "content.js"
+      ]
+    },
+    {
+      "matches": [
+        "https://www.myntra.com/*"
+      ],
+      "js": [
+        "myscript.js"
+      ]
+    }
+  ],
+  "background": {
+    "service_worker": "background.js"
+  }
+}
